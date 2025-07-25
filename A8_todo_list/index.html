@@ -12,24 +12,14 @@
             To Do List
         </h1>
         <div class="add-div">
+            <form action="" onsubmit="event.preventDefault()">
             <input type="text" placeholder="Enter task">
             <button onclick="add()" class="add">+</button>
+            </form>
         </div>
-        <div class="list">
-
-                <ol id="task-list">
-                    <li>hello</li>
-                    <li>hello2</li>
-                </ol>
-            
-            <div id="controls">
-                <button>delte</button>
-                <button>Delete</button>
-            </div>
-            
-        </div>
-
-        <button type="button">Clear All</button>
+        <ol id="list">
+        </ol>
+        <button type="button" class="clear" onclick="clearTask()">Clear All</button>
         
     </div>
     <script src="./script.js"></script>
