@@ -1,0 +1,87 @@
+:root{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    /* font-size: 32px;
+    padding: 10px;
+    height: 50px;
+    width: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    /* border: 3px solid rgb(95, 95, 95);
+    border-radius: 8px;
+    background-color: gold; */
+}
+
+.main{
+    width: 400px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 100px;
+    /* text-align: center; */
+    border-radius: 16px;
+    background-color: gold;
+}
+
+#task-list,#controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#controls button{
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(33, 33, 33);
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+#task-list{
+    justify-self: center;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+input{
+    border: none;
+    padding: 12px 10px;
+    width: 80%;
+    border-radius: 8px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.add-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add{
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    background-color: rgb(33,33,33);
+    color: aliceblue;
+}

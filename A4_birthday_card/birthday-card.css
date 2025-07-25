@@ -1,0 +1,152 @@
+        *{box-sizing: border-box;}
+
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 0;
+        }
+
+        #msg p{
+            text-shadow: 1px 1px 8px darkgrey;
+            
+        }
+
+        #card{
+            border: 5px solid orangered;
+            text-align: center;
+            height: 500px;
+            width: 400px;
+            background-color: orange;
+            background-image: linear-gradient(to right,gold,yellow,orange);
+            border-radius: 30px;
+            rotate: -2deg;
+            padding: 20px 40px;
+            margin: 100px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        #card > * {
+            margin:0 0 25px;
+        }
+        #cake{
+            height: 70px;
+            
+        }
+        .inner-div{
+            background-color: rgb(170, 204, 218);
+            /* width: fit-content; */
+            width: 30%;
+            height: 68px;
+            /* border: 3px solid whitesmoke; */
+            border-radius: 10px;
+            rotate: 2deg;
+            box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.6);
+        }
+        #msg{
+            border: 3px dashed orangered;
+            background-color: white;
+            background-clip: content-box;
+        }
+        button{
+            border: 3px solid black;
+            font-size: 18px;
+            border-radius: 15px;
+            padding: 10px 20px;
+            width: fit-content;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            background-image: linear-gradient(to right,red, orangered,orange);
+            background-clip:border-box;
+            box-shadow: 2px 2px 20px white;
+        }
+        .baloon{
+            height: 60px;
+            width: 50px;
+            background-color: rgb(255, 36, 36);
+
+        }
+
+        #left{
+            position: absolute;
+            border-radius: 100%;
+            left: -30px;
+            bottom: -40px;
+            animation: slide-left 3s ease-in-out infinite;
+        }
+
+        #right{
+            position: absolute;
+            border-radius: 100%;
+            right: -30px;
+            top: -20px;
+            animation: slide-right 3s ease-in-out infinite;
+        }
+
+        @keyframes slide-right {
+            0% {
+                transform: translate(-40px,0px) rotate(-15deg);
+                border-radius: 15%;
+                height: 50px;
+            }
+            25% {
+                transform: translate(0px,0px) rotate(15deg);
+            }
+            50% {
+                transform: translate(0px,400px) rotate(-15deg);
+                height: 60px;
+            }
+            55% {
+                transform: translate(0px,400px) rotate(15deg);
+                scale: 1.2;
+                border-radius: 100%;
+            }
+            85%{
+                transform: translate(0px,0px) rotate(-15deg);
+            }
+            100%{
+                transform: translate(-40px,0px) rotate(-180deg);
+                border-radius: 15%;
+                height: 50px;
+            }
+        }
+
+        @keyframes slide-left {
+            0% {
+                transform: translate(40px,0px) rotate(-15deg);
+                border-radius: 15%;
+                height: 50px;
+            }
+            25% {
+                transform: translate(0px,0px) rotate(15deg);
+            }
+            50% {
+                transform: translate(0px,-400px) rotate(-15deg);
+                height: 60px;
+            }
+            55% {
+                transform: translate(0px,-400px) rotate(15deg);
+                scale: 1.2;
+                border-radius: 100%;
+            }
+            85%{
+                transform: translate(0px,0px) rotate(-15deg);
+            }
+            100%{
+                transform: translate(40px,0px) rotate(-180deg);
+                border-radius: 15%;
+                height: 50px;
+            }
+        }
+
+        #title {
+            margin: 10px 0 0;
+            padding: 0;
+            background-clip:text;
+            -webkit-background-clip:text;
+            -moz-background-clip: text;
+            background-image: linear-gradient(to right, red, gold, green);
+            -webkit-text-fill-color: transparent;
+            color: transparent;           
+        }

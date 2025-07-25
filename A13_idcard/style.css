@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(44, 39, 39);
+}
+
+body {
+    background-color: lightgreen;
+}
+
+.main {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 15.5rem);
+    gap: 3rem;
+}
+
+.id-card {
+    background-color: aliceblue;
+    color: rgb(50, 50, 50);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0.3rem;
+    border: 4px solid #0099ff;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+.id-card:hover {
+  animation: wiggle 0.4s ease;
+}
+
+@keyframes wiggle {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(5deg); }
+  75%  { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.id-card svg {
+    margin: -1px;
+    padding: 0;
+    display: block;
+}
+
+.id-card> :not(svg, img) {
+    padding: 0 1rem;
+}
+
+.photo {
+    align-self: center;
+    display: block;
+    height: 7rem;
+    /* padding: 0px 1rem; */
+    padding: 10px;
+    border-radius: 100%;
+    border: 3px solid #0099ff;
+}
+
+.title {
+    font-size: 1rem;
+    color: rgb(98, 98, 98);
+}
+
+.phone-num {
+    font-size: 1.2rem;
+}

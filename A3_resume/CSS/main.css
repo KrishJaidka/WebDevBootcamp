@@ -1,0 +1,25 @@
+body {
+  background-color: #daeaf1;
+  font-family: "Gogles", sans-serif;
+  font-size: 17px;
+}
+hr {
+  border-style: dotted none none;
+  border-color: rgb(188, 186, 186);
+  border-width: 15px;
+  width: 10%;
+}
+h1 {
+  color: #66bfbf;
+}
+h3 {
+  color: #66bfbf;
+}
+button {
+  font-weight: 600;
+  color: rgb(53, 53, 53);
+  border-radius: 8px;
+  border: 3px solid grey;
+  background: lightgray;
+  padding: 8px 20px;
+}
