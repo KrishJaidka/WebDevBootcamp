@@ -1,0 +1,111 @@
+nav {
+  /* background-color: darkgrey; */
+  background-color: #e7e0f7;
+  padding: 1.2rem 3rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(34, 34, 34);
+}
+
+nav > div {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: start;
+  align-items: center;
+}
+
+:global(.dark) nav {
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+
+.brandName {
+  font-size: 2rem;
+}
+
+.addressDiv {
+  display: flex;
+  align-items: end;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.address h5 {
+  font-size: 0.9rem;
+}
+
+.address h6 {
+  font-size: 0.8rem;
+}
+
+.searchBarDiv {
+  border: none;
+  display: flex;
+  align-items: stretch;
+}
+
+.searchBar {
+  font-size: 1rem;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px 0 0 5px;
+  width: 30vw;
+  outline: none;
+}
+
+.searchBar:focus {
+  transform: scaleX(0.99);
+}
+
+.searchBtn {
+  border-radius: 0;
+  padding: 8px 12px;
+  border-radius: 0 5px 5px 0;
+  background-color: grey;
+}
+
+.searchBtn:active {
+  transform: scale(1.05);
+  background-color: rgb(65, 65, 65);
+}
+
+:global(.dark) .searchBtn:active {
+  background-color: lightgray;
+}
+
+.navBtns {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.themeBtn {
+  height: 2.8rem;
+}
+
+.cartDiv{
+  position: relative;
+}
+
+.cartNum {
+  position: absolute;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: rgb(255, 50, 50);
+  color: white;
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+  scale: 0.59;
+  top: -8px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

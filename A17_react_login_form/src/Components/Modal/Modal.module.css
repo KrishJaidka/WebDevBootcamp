@@ -1,0 +1,117 @@
+/* Modal overlay */
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+}
+
+/* Modal container */
+.modal {
+    position: relative;
+    height: 80vh;
+    width: 90vh;
+    max-width: 90vw;
+    max-height: 90vh;
+    background-color: mintcream;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    animation: modalSlideIn 0.2s ease;
+}
+
+/* Modal content area */
+.content {
+    height: 100%;
+    width: 100%;
+    padding: 2rem 6rem;
+    overflow-y: auto;
+}
+
+/* Close button */
+.closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+    z-index: 10;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.closeButton:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.closeButton:focus {
+    outline: 2px solid #007acc;
+    outline-offset: 2px;
+}
+
+/* Animation */
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .modal {
+        width: 95vw;
+        height: 95vh;
+        border-radius: 4px;
+    }
+    
+    .content {
+        padding: 1.5rem;
+    }
+    
+    .closeButton {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+}
+
+/* Utility classes for different modal sizes */
+.small {
+    height: 40vh;
+    width: 40vh;
+}
+
+.medium {
+    height: 60vh;
+    width: 70vh;
+}
+
+.large {
+    height: 90vh;
+    width: 95vh;
+}
+
+.fullscreen {
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+}
